@@ -11,6 +11,12 @@ h1 {
     font-size: 5vw;
 }
 
+@media (min-width: 500vw) {
+    #logo {
+        display: none;
+    }
+}
+
 #logo {
     color: #1ed6d0;
     text-align: right;
@@ -69,11 +75,11 @@ body {
 }
 
 .catalog_items {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Center the columns horizontally */
-    gap: 10vw; /* Optional: Adjust space between columns */
-    max-width: 90vw; /* Set a max-width for the container */
-    margin: 0 auto; /* Center the container itself */
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    max-width: 90vw;
+    margin: 0 auto;
     font-family: Monument;
     background-color: #252b35;
     padding-left: 5vh;
@@ -81,14 +87,14 @@ body {
 }
 
 .catalog_items > div {
-    flex: 1; /* Ensures each column takes equal width */
-    min-width: 20vh; /* Minimum width for better responsiveness */
+    flex: 1; 
+    min-width: 20vh;
     padding: 2vh;
 }
 
 .catalog_items h3 {
-    text-align: left; /* Align the h3 headings to the left */
-    color: #1ed6d0; /* Optional: Customize heading color */
+    text-align: left;
+    color: #1ed6d0;
     margin-bottom: 2vh;
     font-size: 2vw;
 }
@@ -122,15 +128,15 @@ body {
 }
 
 .quote_author {
-    margin-top: 1vh; /* Space above the author name */
-    text-align: right; /* Align author name to the right */
+    margin-top: 1vh;
+    text-align: right;
     font-style: italic;
 }
 
 .quote_author h3 {
     font-family: Monument;
-    font-size: 2vh; /* Font size for the author's name */
-    color: #1ed6d0; /* Color of the author's text */
+    font-size: 2vh;
+    color: #1ed6d0;
     margin: 0; 
 }
 
@@ -161,4 +167,43 @@ body {
     color:#19908c;
     font-size: 0.7vw;
     filter: saturate(0.7);
+}
+
+.photo-grid {
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    padding: 10px;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.photo-item {
+    background-color: #17181E;
+    color: #17181E;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.photo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.photo-item {
+    background-color: #17181E;
+    color: #1ed6d0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Monument;
 }
