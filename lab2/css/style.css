@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Monument'; /*a name to be used later*/
+    src: url('../resources/fonts/MonumentExtended-Regular.otf'); /*URL to font*/
+}
+
+h1 {
+    text-align: center;
+    color: #1ed6d0;
+    text-transform: uppercase;
+    font-family: Monument;
+    font-size: 5vw;
+}
+
+#logo {
+    color: #1ed6d0;
+    text-align: right;
+    font-size: 0.5vw;
+
+    margin-left: auto;
+    white-space: pre;
+    font-family: monospace;
+}
+
+body {
+    background-color: #17181E;
+}
+
+.navigation {
+    display: flex;
+    font-family: Monument;
+    justify-content: space-between;
+    gap: 1vw;
+    color:#1ed6d0
+}
+
+.navigation a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 5vw;
+    height: 50vh;
+    width: 10vw;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+    background: #17181E;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1ed6d0;
+    border-radius: 3vw;
+    border: 1.5vh solid #1ed6d0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #17a2b8;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #17181E;
+}
+
+.catalog_items {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Center the columns horizontally */
+    gap: 10vw; /* Optional: Adjust space between columns */
+    max-width: 90vw; /* Set a max-width for the container */
+    margin: 0 auto; /* Center the container itself */
+    font-family: Monument;
+    background-color: #252b35;
+    padding-left: 5vh;
+    height: 70vh;
+}
+
+.catalog_items > div {
+    flex: 1; /* Ensures each column takes equal width */
+    min-width: 20vh; /* Minimum width for better responsiveness */
+    padding: 2vh;
+}
+
+.catalog_items h3 {
+    text-align: left; /* Align the h3 headings to the left */
+    color: #1ed6d0; /* Optional: Customize heading color */
+    margin-bottom: 2vh;
+    font-size: 2vw;
+}
+
+.catalog_items ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.catalog_items li {
+    margin-bottom: 1vh;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.quote {
+    background-color: #595a68;
+    border-radius: 1.5vw;
+    padding: 2vw;
+    box-shadow: 0 2vh 3vw rgba(112, 106, 106, 0.4);
+    max-width: 120vh;
+    margin: 0 auto;
+    margin-bottom: 20vh;
+}
+
+.quote h2 {
+    font-family: Monument;
+    font-size: 3vh;
+    color: #e4dcdc;
+    margin: 0;
+}
+
+.quote_author {
+    margin-top: 1vh; /* Space above the author name */
+    text-align: right; /* Align author name to the right */
+    font-style: italic;
+}
+
+.quote_author h3 {
+    font-family: Monument;
+    font-size: 2vh; /* Font size for the author's name */
+    color: #1ed6d0; /* Color of the author's text */
+    margin: 0; 
+}
+
+.footer_info {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    max-width: 70vw;
+    margin: 0 auto;
+    font-family: Monument;
+}
+
+.footer_info ul {
+    list-style-type: none;
+    padding-left: 0;
+    height: 5vh;
+    padding-bottom: 2vh;
+}
+
+.footer_info li {
+    margin-bottom: 1vh;
+    color:#19908c;
+    font-size: 0.7vw;
+}
+
+.footer_info #copyright {
+    padding-top: 5vh;
+    color:#19908c;
+    font-size: 0.7vw;
+    filter: saturate(0.7);
+}
