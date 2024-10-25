@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Monument'; /*a name to be used later*/
+    src: url('../resources/fonts/MonumentExtended-Regular.otf'); /*URL to font*/
+}
+
+h1 {
+    text-align: center;
+    color: #1ed6d0;
+    text-transform: uppercase;
+    font-family: Monument;
+    font-size: 5vw;
+}
+
+@media (min-width: 500vw) {
+    #logo {
+        display: none;
+    }
+}
+
+#logo {
+    color: #1ed6d0;
+    text-align: right;
+    font-size: 0.5vw;
+
+    margin-left: auto;
+    white-space: pre;
+    font-family: monospace;
+}
+
+body {
+    background-color: #17181E;
+}
+
+.navigation {
+    display: flex;
+    font-family: Monument;
+    justify-content: space-between;
+    gap: 1vw;
+    color:#1ed6d0;
+    margin-left: 5vh;
+}
+
+.navigation a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    height: 10vh;
+    width: 30vw;
+    font-size: 1.5vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    margin-top: 20vh;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+    border-radius: 1.5vw;
+    box-shadow: 0 0 0 3px #22fae1;
+}
+
+.selected  {
+    background-color: #30385a;
+    border-color: #3d7a73;
+    border-radius: 1.5vw;
+    height: 10vh;
+}
+
+::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+    background: #17181E;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1ed6d0;
+    border-radius: 3vw;
+    border: 1.5vh solid #1ed6d0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #17a2b8;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #17181E;
+}
+
+.catalog_items {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    max-width: 90vw;
+    margin: 0 auto;
+    font-family: Monument;
+    background-color: #252b35;
+    padding-left: 5vh;
+    height: 70vh;
+}
+
+.catalog_items > div {
+    flex: 1; 
+    min-width: 20vh;
+    padding: 2vh;
+}
+
+.catalog_items h3 {
+    text-align: left;
+    color: #1ed6d0;
+    margin-bottom: 2vh;
+    font-size: 2vw;
+}
+
+.catalog_items ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.catalog_items li {
+    margin-bottom: 1vh;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.quote {
+    background-color: #595a68;
+    border-radius: 1.5vw;
+    padding: 2vw;
+    box-shadow: 0 2vh 3vw rgba(112, 106, 106, 0.4);
+    max-width: 120vh;
+    margin: 0 auto;
+    margin-bottom: 20vh;
+}
+
+.quote h2 {
+    font-family: Monument;
+    font-size: 3vh;
+    color: #e4dcdc;
+    margin: 0;
+}
+
+.quote_author {
+    margin-top: 1vh;
+    text-align: right;
+    font-style: italic;
+}
+
+.quote_author h3 {
+    font-family: Monument;
+    font-size: 2vh;
+    color: #1ed6d0;
+    margin: 0; 
+}
+
+.footer_info {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    max-width: 70vw;
+    margin: 0 auto;
+    font-family: Monument;
+}
+
+.footer_info ul {
+    list-style-type: none;
+    padding-left: 0;
+    height: 5vh;
+    padding-bottom: 2vh;
+}
+
+.footer_info li {
+    margin-bottom: 1vh;
+    color:#19908c;
+    font-size: 0.7vw;
+}
+
+.footer_info #copyright {
+    padding-top: 5vh;
+    color:#19908c;
+    font-size: 0.7vw;
+    filter: saturate(0.7);
+}
+
+.photo-grid {
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    padding: 10px;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.photo-item {
+    background-color: #17181E;
+    color: #17181E;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.photo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.photo-item {
+    background-color: #17181E;
+    color: #1ed6d0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Monument;
+}
+
+@media (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.load-time-stats {
+    padding-top: 5vh;
+    color:#19908c;
+    font-size: 1vw;
+    filter: saturate(0.7);
+    font-family: Monument;
+}
+
+#catalog-items-holder {
+    visibility: hidden;
+    margin-bottom: 5vh;
+}
