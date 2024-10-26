@@ -67,54 +67,38 @@
         </header>
         <main>
             <div class="main-desc">
-                We are top level shop that sells rubicks cubes of all kinds and forms
+                Here you can leave your honest reviews about items you bought!
             </div>
-            <div class="sub-desc-right">
-                <div class="ascii-pic-left">
-         ___  _____  ___     ___   ___   ___  
-        |__ \| ____|/ _ \   / _ \ / _ \ / _ \ 
-           ) | |__ | | | | | | | | | | | | | |
-          / /|___ \| | | | | | | | | | | | | |
-         / /_ ___) | |_| | | |_| | |_| | |_| |
-        |____|____/ \___/   \___/ \___/ \___/ 
+            <div class="review-container" id="reviewContainer">
+                <div class="full-review">
+                    <div class="text-review">
+                        Wow amazing cube, I am loving it so much
+                    </div>
+                    <img src="reviews/review_sample1.jpg" class="img-review">
                 </div>
-                Orders shipped
-            </div>
-            <div class="sub-desc-left">
-                On the market since
-                <div class="ascii-pic-right">
-                 ____    ___   _   ___  
-                 |___ \  / _ \ / | / _ \ 
-                   __) || | | || || | | |
-                  / __/ | |_| || || |_| |
-                  |_____| \___/ |_| \___/  
+                <div class="full-review">
+                    <div class="text-review">
+                        It turns so smooth and easy, magnets feel especially great
+                    </div>
+                    <img src="reviews/review_sample2.jpg" class="img-review">
                 </div>
-            </div>    
-            <div class="sub-desc-right">
-                <div class="ascii-pic-left">
-                    _____    ___     ___     ___  
-                    | ____|  / _ \   / _ \   / _ \ 
-                    | |__   | | | | | | | | | | | |
-                    |___ \  | | | | | | | | | | | |
-                     ___) | | |_| | | |_| | | |_| |
-                    |____/   \___/   \___/   \___/ 
-                </div>
-                reviews on Yandex Market 
-            </div>
-            <div class="sub-desc-left">
-                discount on future orders
-                <div class="ascii-pic-right">
-           /$$    /$$$$$$  /$$   /$$
-           /$$$$   /$$$_  $$|__/  /$$/
-          |_  $$  | $$$$\ $$     /$$/ 
-            | $$  | $$ $$ $$    /$$/  
-            | $$  | $$\ $$$$   /$$/   
-            | $$  | $$ \ $$$  /$$/    
-           /$$$$$$|  $$$$$$/ /$$/  /$$
-          |______/ \______/ |__/  |__/
+                <div class="full-review">
+                    <div class="text-review">
+                        mrrp meow purr
+                    </div>
+                    <img src="reviews/review_sample3.jpg" class="img-review">
                 </div>
             </div>
+            <form id="reviewForm" onsubmit="addReview(event)">
+                <textarea id="reviewText" required></textarea>
+                <input type="file" id="reviewImageFile" accept="image/*" required style="display: none;">
+                <label for="reviewImageFile" class="custom-file-upload">Select An Image</label>
+                <button type="submit">Add Review</button>
+                <button id="clearReviewsButton">Clear Reviews</button>
+            </form>
         </main>
+        <br>
+        <br>
         <footer>
             <div class="footer_info">
                 <ul>
@@ -129,5 +113,6 @@
             <div class="footer_load_time"></div>
         </footer>
         <script src="main.js"></script>
+        <script src="reviews.js"></script>
     </body>
 </html>
