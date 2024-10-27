@@ -1,16 +1,9 @@
 @font-face {
-    font-family: 'Monument'; /*a name to be used later*/
-    src: url('../resources/fonts/MonumentExtended-Regular.otf'); /*URL to font*/
+    font-family: 'Monument';
+    src: url('../resources/fonts/MonumentExtended-Regular.otf');
 }
 
 h1 {
-    /*position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(23, 24, 30, 0.4);
-    backdrop-filter: blur(1vh);
-    margin-bottom: 10vh;*/
-    
     text-align: center;
     color: #1ed6d0;
     text-transform: uppercase;
@@ -43,7 +36,8 @@ body {
     font-family: Monument;
     justify-content: space-between;
     gap: 1vw;
-    color:#1ed6d0
+    color:#1ed6d0;
+    margin-left: 5vh;
 }
 
 .navigation a {
@@ -52,11 +46,27 @@ body {
     align-items: center;
     text-decoration: none;
     color: inherit;
-    padding-left: 5vw;
-    height: 50vh;
-    width: 10vw;
+    height: 10vh;
+    width: 30vw;
     font-size: 1.5vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    margin-top: 20vh;
     text-transform: uppercase;
+}
+
+.navigation a:hover {
+    border-radius: 1.5vw;
+    box-shadow: 0 0 0 3px #22fae1;
+}
+
+.selected  {
+    background-color: #30385a;
+    border-color: #3d7a73;
+    border-radius: 1.5vw;
+    height: 10vh;
 }
 
 ::-webkit-scrollbar {
@@ -231,4 +241,233 @@ body {
     .photo-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.footer_load_time {
+    padding-top: 5vh;
+    color:#19908c;
+    font-size: 1vw;
+    filter: saturate(0.7);
+    font-family: Monument;
+}
+
+#catalog-items-holder {
+    visibility: hidden;
+    margin-bottom: 5vh;
+}
+
+.cart {
+    color: #22fae1;
+    font-family: Monument;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.gif-background {
+    background-image: url('https://media.tenor.com/zGekuDkZowYAAAAi/rupert-black.gif');
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 40vh;
+    margin: 0 auto 10vh;/
+}
+
+.main-desc {
+    font-family: Monument;
+    padding-top: 15vh;
+    color: #22fae1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 3.5svh;
+    margin-bottom: 10vh;
+}
+
+.sub-desc-left {
+    font-family: Monument;
+    color: #22fae1;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+    font-size: 3vh;
+    margin-bottom: 10vh;
+}
+
+.sub-desc-right {
+    font-family: Monument;
+    color: #22fae1;
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    margin-bottom: 10vh;
+}
+
+.ascii-pic-left {
+    justify-content: center;
+    
+    text-align: center;
+    font-size: 1vw;
+    white-space: pre;
+    font-family: monospace;
+}
+
+.ascii-pic-right {
+    text-align: center;
+    font-size: 1vw;
+    white-space: pre;
+    font-family: monospace;
+}
+
+.review-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.full-review {
+    display: flex;
+    align-items: flex-start;
+    padding: 3vh;
+    border: 0.1vw solid #22fae1;
+    border-radius: 1vw;
+    background-color: #292b35;
+}
+
+.text-review {
+    flex: 1;
+    font-size: 2.5vh;
+    color: #22fae1;
+    margin-right: 5vw;
+    font-family: Monument;
+}
+
+.img-review {
+    width: 7vw;
+    height: auto;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+#reviewForm {
+    max-width: 70vw;
+    margin: auto;
+    padding: 5vh;
+    border: 0.1vw solid #22fae1;
+    border-radius: 1vw;
+    background-color: #292b35;
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+#reviewText {
+    width: 55vw;
+    height: 10vh;
+    border: 0.1vw solid #22fae1;
+    background-color: #51597c;
+    border-radius: 0.5vw;
+    font-size: 1rem;
+    color: #22fae1;
+    border: none;
+}
+
+#reviewForm input[type="file"] {
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 2.5vh;
+    width: 10vw;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    width: 5vw;
+    text-align: center;
+    padding: 1.5vh 1vw;
+    background-color: #566cb1;
+    color: #22fae1;
+    font-size: 2vh;
+    font-family: Monument;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #30b5f3;
+}
+
+#reviewForm button {
+    width: 12vw;
+    background-color: #566cb1;
+    color: #22fae1;
+    font-family: Monument;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reviewForm button:hover {
+    background-color: #30b5f3;
+}
+
+#preloader {
+    width: 100px;
+    height: 100px;
+    background-color: #17181E;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #22fae1;
+    border-top: 10px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+#error-fetcher {
+    color: #DA2C38;
+}
+
+.none {
+    display: none;
+}
+
+.visible {
+    display:flex;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.multiple-items {
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.multiple-items img {
+    width: 70%;
+    height: auto;
+    border-radius: 1vw;
+    margin-left: 50px;
+    box-shadow: 2vh 2vh 2vw rgba(112, 106, 106, 0.6);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }

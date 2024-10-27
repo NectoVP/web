@@ -456,3 +456,18 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.multiple-items {
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.multiple-items img {
+    width: 70%;
+    height: auto;
+    border-radius: 1vw;
+    margin-left: 50px;
+    box-shadow: 2vh 2vh 2vw rgba(112, 106, 106, 0.6);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
