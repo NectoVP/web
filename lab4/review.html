@@ -89,6 +89,12 @@
                     <img src="reviews/review_sample3.jpg" class="img-review">
                 </div>
             </div>
+            <div id="preloader">
+                <div class="loader"></div>
+            </div>
+            <div id="error-fetcher" class="main-desc">
+                Something when wrong :(
+            </div>
             <form id="reviewForm" onsubmit="addReview(event)">
                 <textarea id="reviewText" required></textarea>
                 <input type="file" id="reviewImageFile" accept="image/*" required style="display: none;">
@@ -114,5 +120,6 @@
         </footer>
         <script src="main.js"></script>
         <script src="reviews.js"></script>
+        <script src="fetching.js"></script>
     </body>
 </html>

@@ -21,6 +21,10 @@ function displayReview(reviewText, reviewImage) {
     const imgReview = document.createElement("img");
     imgReview.classList.add("img-review");
     imgReview.src = reviewImage;
+    imgReview.onerror = () => {
+        console.error("Failed to load image:", reviewImage);
+        imgReview.src = "reviews/review_sample3.jpg";
+    };
 
     fullReview.appendChild(textReview);
     fullReview.appendChild(imgReview);
@@ -45,9 +49,6 @@ function addReview(event) {
             saveReviewToLocalStorage(newReview);
         };
         reader.readAsDataURL(reviewImageFile);
-    } else {
-        displayReview(newReview.text, "reviews/review_sample3.jpg");
-        saveReviewToLocalStorage(newReview);
     }
     document.getElementById("reviewForm").reset();
 }
